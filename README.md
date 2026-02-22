@@ -1,41 +1,53 @@
-# NEXI Assistant
+# NEXI 🤖 | Advanced AI Agent
 
-Flutter app for the NEXI / OpenClaw-NX chat interface.
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0001--9838--1117-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-9838-1117)
+[![Framework: OpenClaw](https://img.shields.io/badge/Framework-OpenClaw-blue)](https://github.com/openclaw)
+[![Stack: Flutter-Supabase-PostgreSQL](https://img.shields.io/badge/Stack-Flutter--Supabase--PostgreSQL-teal)](https://supabase.com)
 
-## Stack
+**NEXI** es un agente de inteligencia artificial avanzado, núcleo del ecosistema tecnológico de **3M Technology**. Construido sobre el framework **OpenClaw**, NEXI está diseñado para operar como un asistente autónomo con capacidades de memoria a largo plazo y ejecución de tareas complejas.
 
-- **Flutter** 3.16+ (Impeller rendering)
-- **Dart** 3.0+ (records, patterns)
-- **Riverpod** (state management)
-- **go_router** (navigation)
-- **Google Fonts** (Space Grotesk)
+## 🚀 Características Principales
 
-## Setup
+* **Arquitectura Soberana:** Implementación en infraestructura propia (Self-hosted) mediante Docker y Nginx.
+* **Memoria Semántica:** Gestión de contexto dinámico utilizando **pgvector** en PostgreSQL para una recuperación de información (RAG) eficiente.
+* **Integración CD-3M:** Diseñado para interactuar con los módulos de la suite CD-3M (Billing V2, Roturas NX).
+* **Interfaz Versátil:** Optimizado para interacción fluida a través de Telegram.
+
+## 🛠️ Stack Tecnológico
+
+* **Engine:** OpenClaw + Kimi 2.5:cloud
+* **Database:** PostgreSQL + pgvector (SupaBase/VPS)
+* **Deployment:** Docker, PM2, Nginx
+* **Environment:** Ubuntu VPS
+
+## 📱 Cliente Flutter (NEXI Assistant)
+
+App móvil para la interfaz de chat NEXI/OpenClaw-NX.
+
+- **Flutter** 3.16+ · **Dart** 3.0+ · **Riverpod** · **go_router** · **Supabase**
+
+### Setup
 
 ```bash
 cd nexi_assistant
 flutter pub get
 
 # Crear .env con credenciales (copia .env.example si no existe)
-# cp .env.example .env
-# Edita .env con tu SUPABASE_URL y SUPABASE_ANON_KEY
+cp .env.example .env
+# Edita .env con SUPABASE_URL y SUPABASE_ANON_KEY
 
 flutter run
 ```
 
-**Importante:** El archivo `.env` contiene credenciales y **no debe subirse a GitHub**. Está en `.gitignore`. Usa `.env.example` como plantilla.
+**Importante:** El archivo `.env` contiene credenciales y **no debe subirse a GitHub**. Está en `.gitignore`.
 
-## Architecture
+## 🧬 Identidad Académica y de Desarrollo
 
-- **Feature-based**: `lib/features/home/`, `lib/features/commands/`
-- **Core widgets**: `lib/core/widgets/`
-- **Services**: `lib/services/`
-- **Models**: freezed + json_serializable
+Este proyecto forma parte del portafolio de investigación técnica y desarrollo de software de **Milton**.
 
-## Design System
+* **ID de Investigador:** [ORCID 0009-0001-9838-1117](https://orcid.org/0009-0001-9838-1117)
+* **Organización:** 3M Technology
 
-- Dark mode only (por ahora)
-- **Primary**: `#4b3fe9` (indigo)
-- **Accent**: `#2dd4bf` (teal)
-- **Glassmorphism**: `BackdropFilter` + semi-transparent
-- **Border radius**: 16px (cards), 24px (buttons), full (FAB)
+## 📄 Licencia
+
+Este proyecto es propiedad privada de 3M Technology. Todos los derechos reservados bajo la visión de soberanía tecnológica.
