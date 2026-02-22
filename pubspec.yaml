@@ -1,0 +1,73 @@
+name: nexi_assistant
+description: NEXI Assistant - Personal AI powered by OpenClaw-NX
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Navigation
+  go_router: ^13.0.1
+  
+  # UI/UX
+  google_fonts: ^6.1.0
+  shimmer: ^3.0.0
+  flutter_animate: ^4.3.0
+  
+  # Icons
+  flutter_material_design_icons: ^1.0.0
+  
+  # Network
+  dio: ^5.4.1
+  web_socket_channel: ^3.0.1
+  supabase_flutter: ^2.6.0
+  
+  # Voice
+  speech_to_text: ^7.3.0
+  flutter_tts: ^4.2.2
+  
+  # Utils
+  flutter_dotenv: ^5.1.0
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.3
+  custom_lint: ^0.7.0
+  riverpod_lint: ^2.3.13
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - .env
+    
+  # Local fonts (opcional): descargar Space Grotesk e incluir en assets/fonts/
+  # fonts:
+  #   - family: SpaceGrotesk
+  #     fonts:
+  #       - asset: assets/fonts/SpaceGrotesk-Light.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/SpaceGrotesk-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/SpaceGrotesk-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/SpaceGrotesk-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/SpaceGrotesk-Bold.ttf
+  #         weight: 700
